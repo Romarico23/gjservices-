@@ -4,7 +4,11 @@ export const SpinningLogo = () => {
   return (
     <div className="spinningLogo">
       <h1>Loading...</h1>
-      <img className="child" src="./src/assets/gj-logo-spin.png" alt="LOGO" />
+      <img
+        className="child"
+        src="https://i.ibb.co/J5hKMrx/gj-logo-spin.png"
+        alt="LOGO"
+      />
     </div>
   );
 };

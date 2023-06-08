@@ -7,7 +7,7 @@ import { BiTime } from "react-icons/bi";
 import { HomePage1 } from "./HomePage1";
 import { HomePage2 } from "./HomePage2";
 import { HomePage3 } from "./HomePage3";
-import { Link, useNavigate, useOutletContext } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { stagger, useAnimate, useInView, motion } from "framer-motion";
 
 export const Home = () => {
@@ -192,32 +192,35 @@ export const Home = () => {
         </p>
         <div ref={scopeServicesList}>
           <Link to="/contact">
-            <img src="./src/assets/services/acinstallation.png" alt="Image" />
+            <img
+              src="https://i.ibb.co/pZNSH1R/acinstallation.png"
+              alt="Image"
+            />
             <h3>AC Installation</h3>
             <p>Request Now</p>
           </Link>
           <Link to="/contact">
-            <img src="./src/assets/services/accleaning.png" alt="Image" />
+            <img src="https://i.ibb.co/KLMcsDv/accleaning.png" alt="Image" />
             <h3>AC Cleaning</h3>
             <p>Request Now</p>
           </Link>
           <Link to="/contact">
-            <img src="./src/assets/services/acrepair.png" alt="Image" />
+            <img src="https://i.ibb.co/qymXTnB/acrepair.png" alt="Image" />
             <h3>AC Repair</h3>
             <p>Request Now</p>
           </Link>
           <Link to="/contact">
-            <img src="./src/assets/services/acdismantle.png" alt="Image" />
+            <img src="https://i.ibb.co/64NKV74/acdismantle.png" alt="Image" />
             <h3>AC Dismantle</h3>
             <p>Request Now</p>
           </Link>
           <Link to="/contact">
-            <img src="./src/assets/services/pcbrepair.png" alt="Image" />
+            <img src="https://i.ibb.co/0BnjMV1/pcbrepair.png" alt="Image" />
             <h3>PCB Repair</h3>
             <p>Request Now</p>
           </Link>
           <Link to="/contact">
-            <img src="./src/assets/services/accheckup.png" alt="Image" />
+            <img src="https://i.ibb.co/CtBYS85/accheckup.png" alt="Image" />
             <h3>AC Check Up</h3>
             <p>Request Now</p>
           </Link>
@@ -236,43 +239,43 @@ export const Home = () => {
         </h1>
         <div ref={scopeImgBrands}>
           <Link to="https://greephilippines.com.ph/" target="_blank">
-            <img src="./src/assets/gree.png" alt="Image" />
+            <img src="https://i.ibb.co/zF3tRmN/gree.png" alt="Image" />
           </Link>
           <Link to="https://www.daikin.com.ph/products/" target="_blank">
-            <img src="./src/assets/daikin.png" alt="Image" />
+            <img src="https://i.ibb.co/Q65Dnyy/daikin.png" alt="Image" />
           </Link>
           <Link
             to="https://www.panasonic.com/ph/air-solutions/air-conditioning.html"
             target="_blank"
           >
-            <img src="./src/assets/panasonic.png" alt="Image" />
+            <img src="https://i.ibb.co/FWHs5Kx/panasonic.png" alt="Image" />
           </Link>
           <Link to="https://koppel.ph/products/" target="_blank">
-            <img src="./src/assets/koppel.png" alt="Image" />
+            <img src="https://i.ibb.co/dP1nvZ4/koppel.png" alt="Image" />
           </Link>
           <Link
             to="https://www.samsung.com/ph/air-conditioners/all-air-conditioners/"
             target="_blank"
           >
-            <img src="./src/assets/samsung.png" alt="Image" />
+            <img src="https://i.ibb.co/bzGB611/samsung.png" alt="Image" />
           </Link>
           <Link
             to="https://carrier.com.ph/residential/products/"
             target="_blank"
           >
-            <img src="./src/assets/carrier.png" alt="Image" />
+            <img src="https://i.ibb.co/gWBzyRv/carrier.png" alt="Image" />
           </Link>
           <Link to="https://www.lg.com/ph/air-conditioners" target="_blank">
-            <img src="./src/assets/lg.png" alt="Image" />
+            <img src="https://i.ibb.co/b7JkRMb/lg.png" alt="Image" />
           </Link>
           <Link
             to="https://www.haier.com/ph/air-conditioners/?spm=ph.ProductList_pc.header_101377_20190530.4"
             target="_blank"
           >
-            <img src="./src/assets/haier.png" alt="Image" />
+            <img src="https://i.ibb.co/ZStyTTy/haier.png" alt="Image" />
           </Link>
           <Link to="https://www.midea.com/ph/cooling-comfort" target="_blank">
-            <img src="./src/assets/midea.png" alt="Image" />
+            <img src="https://i.ibb.co/jH3z30j/midea.png" alt="Image" />
           </Link>
         </div>
       </div>

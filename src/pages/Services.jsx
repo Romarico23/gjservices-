@@ -114,32 +114,35 @@ export const Services = () => {
         </p>
         <div ref={scopeServicesList}>
           <Link to="/contact">
-            <img src="./src/assets/services/acinstallation.png" alt="Image" />
+            <img
+              src="https://i.ibb.co/pZNSH1R/acinstallation.png"
+              alt="Image"
+            />
             <h3>AC Installation</h3>
             <p>Request Now</p>
           </Link>
           <Link to="/contact">
-            <img src="./src/assets/services/accleaning.png" alt="Image" />
+            <img src="https://i.ibb.co/KLMcsDv/accleaning.png" alt="Image" />
             <h3>AC Cleaning</h3>
             <p>Request Now</p>
           </Link>
           <Link to="/contact">
-            <img src="./src/assets/services/acrepair.png" alt="Image" />
+            <img src="https://i.ibb.co/qymXTnB/acrepair.png" alt="Image" />
             <h3>AC Repair</h3>
             <p>Request Now</p>
           </Link>
           <Link to="/contact">
-            <img src="./src/assets/services/acdismantle.png" alt="Image" />
+            <img src="https://i.ibb.co/64NKV74/acdismantle.png" alt="Image" />
             <h3>AC Dismantle</h3>
             <p>Request Now</p>
           </Link>
           <Link to="/contact">
-            <img src="./src/assets/services/pcbrepair.png" alt="Image" />
+            <img src="https://i.ibb.co/0BnjMV1/pcbrepair.png" alt="Image" />
             <h3>PCB Repair</h3>
             <p>Request Now</p>
           </Link>
           <Link to="/contact">
-            <img src="./src/assets/services/accheckup.png" alt="Image" />
+            <img src="https://i.ibb.co/CtBYS85/accheckup.png" alt="Image" />
             <h3>AC Check Up</h3>
             <p>Request Now</p>
           </Link>

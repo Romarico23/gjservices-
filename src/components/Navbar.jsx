@@ -146,7 +146,7 @@ export const Navbar = () => {
               windowScrollToTop();
             }}
           >
-            <img src="./src/assets/gj-logo-2.png" alt="LOGO" />
+            <img src="https://i.ibb.co/KrwTDHz/gj-logo-2.png" alt="GJ-LOGO" />
           </Link>
         </div>
         <div

@@ -85,8 +85,8 @@ export const HomePage1 = ({ addMinusPage }) => {
         <button onClick={handleNavigateContact}>INQUIRE NOW</button>
       </div>
       <div ref={scopeImg}>
-        <img src="./src/assets/image-1.png" alt="Image" />
-        <img src="./src/assets/image-2.png" alt="Image" />
+        <img src="https://i.ibb.co/9HH65yq/image-1.png" alt="Image" />
+        <img src="https://i.ibb.co/S6JHB6j/image-2.png" alt="Image" />
       </div>
       <div>
         <img
@@ -96,7 +96,7 @@ export const HomePage1 = ({ addMinusPage }) => {
             opacity: isInViewBackgroundImg ? 0.5 : 0,
             transition: "all 3s",
           }}
-          src="./src/assets/image-3.png"
+          src="https://i.ibb.co/4gRYDh9/image-3.png"
           alt="Image"
         />
       </div>

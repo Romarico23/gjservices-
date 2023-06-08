@@ -60,40 +60,40 @@ export const HomePage3 = ({ addMinusPage }) => {
       </h1>
       <div ref={scopeImg}>
         <Link to="https://greephilippines.com.ph/" target="_blank">
-          <img src="./src/assets/gree.png" alt="Image" />
+          <img src="https://i.ibb.co/zF3tRmN/gree.png" alt="Image" />
         </Link>
         <Link to="https://www.daikin.com.ph/products/" target="_blank">
-          <img src="./src/assets/daikin.png" alt="Image" />
+          <img src="https://i.ibb.co/Q65Dnyy/daikin.png" alt="Image" />
         </Link>
         <Link
           to="https://www.panasonic.com/ph/air-solutions/air-conditioning.html"
           target="_blank"
         >
-          <img src="./src/assets/panasonic.png" alt="Image" />
+          <img src="https://i.ibb.co/FWHs5Kx/panasonic.png" alt="Image" />
         </Link>
         <Link to="https://koppel.ph/products/" target="_blank">
-          <img src="./src/assets/koppel.png" alt="Image" />
+          <img src="https://i.ibb.co/dP1nvZ4/koppel.png" alt="Image" />
         </Link>
         <Link
           to="https://www.samsung.com/ph/air-conditioners/all-air-conditioners/"
           target="_blank"
         >
-          <img src="./src/assets/samsung.png" alt="Image" />
+          <img src="https://i.ibb.co/bzGB611/samsung.png" alt="Image" />
         </Link>
         <Link to="https://carrier.com.ph/residential/products/" target="_blank">
-          <img src="./src/assets/carrier.png" alt="Image" />
+          <img src="https://i.ibb.co/gWBzyRv/carrier.png" alt="Image" />
         </Link>
         <Link to="https://www.lg.com/ph/air-conditioners" target="_blank">
-          <img src="./src/assets/lg.png" alt="Image" />
+          <img src="https://i.ibb.co/b7JkRMb/lg.png" alt="Image" />
         </Link>
         <Link
           to="https://www.haier.com/ph/air-conditioners/?spm=ph.ProductList_pc.header_101377_20190530.4"
           target="_blank"
         >
-          <img src="./src/assets/haier.png" alt="Image" />
+          <img src="https://i.ibb.co/ZStyTTy/haier.png" alt="Image" />
         </Link>
         <Link to="https://www.midea.com/ph/cooling-comfort" target="_blank">
-          <img src="./src/assets/midea.png" alt="Image" />
+          <img src="https://i.ibb.co/jH3z30j/midea.png" alt="Image" />
         </Link>
       </div>
       <div
@@ -114,7 +114,7 @@ export const HomePage3 = ({ addMinusPage }) => {
             opacity: isInViewBackgroundImg ? 0.5 : 0,
             transition: "all 3s",
           }}
-          src="./src/assets/image-3.png"
+          src="https://i.ibb.co/4gRYDh9/image-3.png"
           alt="Image"
         />
       </div>

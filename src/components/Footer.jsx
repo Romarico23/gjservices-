@@ -46,7 +46,7 @@ export const Footer = () => {
       <div className="footerDetails">
         <div className="footerDetailsContainer">
           <Link to="/" onClick={windowScrollToTop}>
-            <img src="./src/assets/gj-logo-2.png" alt="LOGO" />
+            <img src="https://i.ibb.co/KrwTDHz/gj-logo-2.png" alt="GJ-LOGO" />
           </Link>
           <h3>CONTACT US</h3>
           <span>
