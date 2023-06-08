@@ -1,0 +1,178 @@
+.aboutusContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutusHeader {
+  background-image: url("https://www.hitachiaircon.com/mea/storage/images/news/news_image_header_24f3aea0bbee33b38e618c675daf6cb3.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(18rem, 40vw, 28rem);
+  width: 100%;
+  box-shadow: 0px 40px 30px rgba(234, 234, 234, 0.75);
+}
+.aboutusHeader h1 {
+  text-align: center;
+  margin-top: 5rem;
+  color: rgb(0, 31, 143);
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  filter: drop-shadow(3px 3px 2px #ffffff);
+}
+.missionContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(395px, 1fr));
+}
+.missionContainer div:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-block: clamp(1rem, 8vw, 4rem);
+  padding-inline: clamp(3rem, 7vw, 5rem);
+}
+.missionContainer div:nth-of-type(1) h2 {
+  font-size: clamp(1rem, 6vw, 2rem);
+  color: rgb(0, 31, 143);
+}
+.missionContainer div:nth-of-type(1) p {
+  text-align: justify;
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
+  margin-top: clamp(0.5rem, 3vw, 1rem);
+}
+.missionContainer div:nth-of-type(1) a {
+  color: rgb(0, 31, 143);
+}
+.missionContainer div:nth-of-type(2) {
+  background-image: url("https://www.recommend.my/blog/wp-content/uploads/2017/03/aircond-guide.jpg");
+  background-color: #cccccc;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: clamp(10rem, 60vw, 24rem);
+  width: 100%;
+}
+.visionContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(395px, 1fr));
+}
+.visionContainer div:nth-of-type(1) {
+  background-image: url("https://wallpapercave.com/dwp1x/wp8216495.jpg");
+  background-color: #cccccc;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.visionContainer div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-block: clamp(1rem, 8vw, 4rem);
+  padding-inline: clamp(3rem, 7vw, 5rem);
+}
+.visionContainer div:nth-of-type(2) h2 {
+  font-size: clamp(1rem, 6vw, 2rem);
+  color: rgb(0, 31, 143);
+}
+.visionContainer div:nth-of-type(2) p {
+  margin-top: 1rem;
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
+}
+.visionContainer div:nth-of-type(2) ul {
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  list-style: none;
+}
+.visionContainer div:nth-of-type(2) ul li {
+  position: relative;
+  margin-block: 0.5rem;
+}
+.visionContainer div:nth-of-type(2) ul li::before {
+  content: "➣";
+  color: rgb(0, 31, 143);
+  left: -1.45rem;
+  position: absolute;
+}
+.lookingForContainer {
+  background-image: url("https://wallpapercave.com/wp/wp8656122.jpg");
+  background-color: #cccccc;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-block: clamp(0rem, 10vw, 8rem);
+  color: #232323;
+  box-shadow: 0px -40px 30px rgba(234, 234, 234, 0.75);
+}
+.lookingForContainer div:nth-of-type(1) {
+  padding-inline: clamp(0rem, 7vw, 4rem);
+}
+.lookingForContainer div:nth-of-type(1) h1 {
+  font-size: clamp(1.5rem, 7vw, 3.5rem);
+}
+.lookingForContainer div:nth-of-type(1) h1 span {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.lookingForContainer div:nth-of-type(1) h3 {
+  font-size: clamp(0.8rem, 3vw, 1.3rem);
+  margin-top: clamp(1rem, 3vw, 2rem);
+  text-align: justify;
+}
+.lookingForContainer div:nth-of-type(1) h3 span {
+  background-color: #ccccccb1;
+}
+.lookingForContainer div:nth-of-type(1) h3 span a {
+  color: darkblue;
+}
+.lookingForContainer div:nth-of-type(1) div {
+  margin-top: clamp(1rem, 3vw, 2rem);
+  display: flex;
+  padding-left: 0;
+}
+.lookingForContainerBtn {
+  height: clamp(2rem, 8vw, 4rem);
+  width: clamp(5.5rem, 25vw, 12rem);
+  font-size: clamp(0.8rem, 3vw, 1.1rem);
+  font-weight: 500;
+  background: black;
+  color: rgb(245, 245, 245);
+  margin-top: 0;
+  border: 3px solid black;
+  border-radius: 2rem;
+  margin-right: clamp(0.8rem, 4vw, 2rem);
+  transition: 0.6s;
+  cursor: pointer;
+}
+.lookingForContainerBtn:hover {
+  background: rgb(0, 204, 255);
+  color: black;
+  border: 3px solid black;
+  font-weight: 800;
+  font-size: clamp(0.9rem, 3.3vw, 1.3rem);
+}
+@media (width <= 812px) {
+  .missionContainer div:nth-of-type(1) {
+    padding-inline: clamp(4.5rem, 15vw, 5rem);
+  }
+  .visionContainer div:nth-of-type(1) {
+    height: 22rem;
+    grid-row: 2;
+  }
+  .visionContainer div:nth-of-type(2) {
+    grid-column: 1;
+  }
+  .visionContainer div:nth-of-type(2) {
+    padding-inline: clamp(4.5rem, 15vw, 5rem);
+  }
+}

@@ -1,0 +1,146 @@
+.servicesContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.servicesHeader {
+  background-image: url("https://www.biliranisland.com/wp-content/uploads/2019/07/Aircon-Cleaning-Naval-Biliran-1030x538.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(18rem, 40vw, 28rem);
+  width: 100%;
+}
+.servicesHeader h1 {
+  text-align: center;
+  margin-top: 5rem;
+  color: #ffffff;
+  padding-inline: 0.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  filter: drop-shadow(3px 3px 2px rgb(0, 31, 143));
+}
+.servicesContainer {
+  background: #ffffff;
+  height: 100%;
+  color: darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: clamp(2rem, 10vw, 4rem);
+  padding-bottom: clamp(3rem, 10vw, 7rem);
+  padding-inline: 1rem;
+}
+.servicesContainer div:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: clamp(2rem, 6vw, 6rem);
+  row-gap: clamp(1rem, 5vw, 3rem);
+}
+.servicesContainer div:nth-of-type(1) span {
+  position: relative;
+}
+.servicesContainer div:nth-of-type(1) span svg {
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+}
+.servicesContainer div:nth-of-type(1) span h3 {
+  position: relative;
+  font-size: clamp(0.85rem, 5vw, 1.5rem);
+  display: flex;
+  align-items: center;
+}
+.servicesContainer div:nth-of-type(1) span:nth-of-type(1) h3 {
+  justify-content: end;
+}
+.servicesContainer div:nth-of-type(1) span h3 p {
+  color: darkblue;
+  position: absolute;
+  top: -0.8rem;
+  left: clamp(3rem, 13vw, 4.8rem);
+  font-size: clamp(0.85rem, 5vw, 1rem);
+  white-space: nowrap;
+}
+.servicesContainer div:nth-of-type(1) span:nth-of-type(3) h3 p {
+  left: clamp(2rem, 10vw, 3.4rem);
+}
+.servicesContainer div:nth-of-type(1) span p {
+  font-size: clamp(0.8rem, 5vw, 0.95rem);
+  text-align: center;
+  color: #232323;
+  margin-top: 1rem;
+}
+.servicesContainer h1:nth-of-type(1) {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-top: 4rem;
+  padding-inline: 0.5rem;
+  filter: drop-shadow(0 5px 0 rgb(157, 157, 157));
+  text-align: center;
+}
+.servicesContainer .servicesContainerDescription {
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  font-weight: 500;
+  margin-top: 1rem;
+  padding-inline: clamp(0rem, 8vw, 4rem);
+  text-align: center;
+}
+@supports (text-align-last: center) {
+  .servicesContainer .servicesContainerDescription {
+    text-align: justify;
+    text-align-last: center;
+  }
+}
+.servicesContainer div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-inline: clamp(0rem, 10vw, 10rem);
+  row-gap: clamp(0rem, 10vw, 2.5rem);
+  column-gap: clamp(2rem, 12vw, 10rem);
+  margin-top: clamp(0rem, 10vw, 4rem);
+}
+
+.servicesContainer div:nth-of-type(2) a img {
+  height: clamp(4.5rem, 15vw, 10rem);
+  transition: 0.4s;
+}
+.servicesContainer div:nth-of-type(2) a:hover img {
+  opacity: 0.6;
+}
+.servicesContainer div:nth-of-type(2) a h3 {
+  font-size: clamp(0.85rem, 2.5vw, 1.2rem);
+  text-align: center;
+  color: darkblue;
+  transition: ease 0.4s;
+}
+.servicesContainer div:nth-of-type(2) a p {
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  text-align: center;
+  color: #232323;
+  transition: 0.4s;
+}
+.servicesContainer div:nth-of-type(2) a:hover h3,
+.servicesContainer div:nth-of-type(2) a:hover p {
+  transform: scale(1.1);
+}
+@media (width <= 795px) {
+  .servicesContainer div:nth-of-type(1) span:nth-of-type(1) h3 {
+    margin-right: 3rem;
+  }
+  .servicesContainer div:nth-of-type(1) span:nth-of-type(2) h3 {
+    margin-left: 0.3rem;
+  }
+  .servicesContainer div:nth-of-type(1) span:nth-of-type(3) h3 {
+    margin-left: 3rem;
+  }
+}
+@media (width <= 403px) {
+  .servicesContainer div:nth-of-type(2) {
+    padding-inline: 0;
+  }
+}

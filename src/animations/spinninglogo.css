@@ -1,0 +1,30 @@
+.spinningLogo h1 {
+  font-size: 2rem;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  margin: -50px 0 0 -75px;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+}
+.child {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

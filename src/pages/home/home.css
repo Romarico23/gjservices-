@@ -1,0 +1,272 @@
+.homeContent {
+  background-image: url("./src/assets/buildingbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: rgb(245, 245, 245);
+}
+/* Page Button and Circle Indicator */
+.pageButton {
+  position: relative;
+}
+.pageButton button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  color: rgb(149, 141, 141);
+  transition: 0.6s ease;
+}
+.pageButton button svg {
+  font-size: clamp(2rem, 10vw, 4rem);
+}
+.pageButton button:hover {
+  color: rgb(91, 91, 91);
+}
+.pageButton button:nth-of-type(1) {
+  position: absolute;
+  bottom: 17rem;
+  left: clamp(-2rem, 5vw, 3rem);
+  z-index: 100;
+}
+.pageButton button:nth-of-type(2) {
+  position: absolute;
+  bottom: 17rem;
+  right: clamp(-2rem, 5vw, 3rem);
+  z-index: 100;
+}
+.circle-container {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-4rem);
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: gray;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.circle:hover {
+  background-color: rgb(72, 72, 72);
+}
+.circle.active {
+  background-color: black;
+}
+.services {
+  background: #ffffff;
+  height: 100%;
+  color: darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -0.65rem;
+  padding-top: clamp(2rem, 10vw, 4rem);
+  padding-bottom: clamp(3rem, 10vw, 7rem);
+  padding-inline: 1rem;
+}
+.services div:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: clamp(2rem, 6vw, 6rem);
+  row-gap: clamp(1rem, 5vw, 3rem);
+}
+.services div:nth-of-type(1) span {
+  position: relative;
+}
+.services div:nth-of-type(1) span svg {
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+}
+.services div:nth-of-type(1) span h3 {
+  position: relative;
+  font-size: clamp(0.85rem, 5vw, 1.5rem);
+  display: flex;
+  align-items: center;
+}
+.services div:nth-of-type(1) span:nth-of-type(1) h3 {
+  justify-content: end;
+}
+.services div:nth-of-type(1) span h3 p {
+  color: darkblue;
+  position: absolute;
+  top: -0.8rem;
+  left: clamp(3rem, 13vw, 4.8rem);
+  font-size: clamp(0.85rem, 5vw, 1rem);
+  white-space: nowrap;
+}
+.services div:nth-of-type(1) span:nth-of-type(3) h3 p {
+  left: clamp(2rem, 10vw, 3.4rem);
+}
+.services div:nth-of-type(1) span p {
+  text-align: center;
+  font-size: clamp(0.8rem, 5vw, 0.95rem);
+  color: #232323;
+  margin-top: clamp(0.5rem, 3vw, 1rem);
+}
+.services h1:nth-of-type(1) {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-top: clamp(2rem, 6vw, 4rem);
+  text-align: center;
+}
+.services .servicesDescription {
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  font-weight: 500;
+  margin-top: 1rem;
+  padding-inline: clamp(0rem, 3vw, 4rem);
+  text-align: center;
+}
+@supports (text-align-last: center) {
+  .services .servicesDescription {
+    text-align: justify;
+    text-align-last: center;
+  }
+}
+.services div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-inline: clamp(0rem, 10vw, 10rem);
+  row-gap: clamp(0rem, 10vw, 2.5rem);
+  column-gap: clamp(2rem, 12vw, 10rem);
+  margin-top: clamp(0rem, 10vw, 4rem);
+}
+
+.services div:nth-of-type(2) a img {
+  height: clamp(4.5rem, 15vw, 10rem);
+  transition: 0.4s;
+}
+.services div:nth-of-type(2) a:hover img {
+  opacity: 0.6;
+}
+.services div:nth-of-type(2) a h3 {
+  font-size: clamp(0.85rem, 2.5vw, 1.2rem);
+  text-align: center;
+  color: darkblue;
+  transition: ease 0.4s;
+}
+.services div:nth-of-type(2) a p {
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  text-align: center;
+  color: #232323;
+  transition: 0.4s;
+}
+.services div:nth-of-type(2) a:hover h3,
+.services div:nth-of-type(2) a:hover p {
+  transform: scale(1.1);
+}
+.products {
+  background: #ffffff;
+  margin-top: 0.1rem;
+  color: darkblue;
+  height: 100%;
+  padding-block: clamp(0rem, 14vw, 3.5rem);
+}
+.products h1,
+.aboutus h1 {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+.products div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: clamp(0rem, 8vw, 5rem);
+  row-gap: clamp(0rem, 4vw, 2.5rem);
+  padding-inline: clamp(0rem, 6vw, 3rem);
+  margin-top: clamp(0rem, 8vw, 3rem);
+}
+.products div a {
+  justify-content: center;
+  align-items: center;
+}
+.products div a img {
+  width: clamp(7rem, 25vw, 16rem);
+  transition: ease 0.4s;
+}
+.products div a:hover img {
+  transform: scale(1.1);
+}
+.aboutus {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-block: 4rem;
+  padding-inline: 4rem;
+}
+.aboutus h1 {
+  text-align: center;
+  filter: drop-shadow(1rem 1rem 5px rgb(238, 238, 238));
+}
+.aboutus div:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: clamp(0rem, 8vw, 3rem);
+}
+.aboutus div:nth-of-type(1) div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0;
+}
+.aboutus div:nth-of-type(1) img {
+  filter: drop-shadow(0 0 5px rgb(238, 238, 238));
+  border-radius: 1rem;
+  border: solid 0.5rem rgb(67, 67, 255);
+  height: clamp(7rem, 25vw, 20.5rem);
+}
+.aboutus div:nth-of-type(1) div p {
+  text-indent: clamp(0.85rem, 8vw, 3.5rem);
+  font-size: clamp(0.85rem, 2.5vw, 1.2rem);
+  margin-inline: 3rem;
+  text-align: justify;
+}
+.aboutus div:nth-of-type(1) div p:nth-of-type(2) {
+  margin-top: clamp(0rem, 5vw, 1.2rem);
+}
+.aboutus div:nth-of-type(1) div button {
+  padding-bottom: 0.2rem;
+}
+.aboutus div:nth-of-type(1) div button:hover {
+  background: #7aa4ff !important;
+  color: black !important;
+}
+@media (width <= 1140px) {
+  .aboutus div:nth-of-type(1) {
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutus div:nth-of-type(1) div {
+    margin-top: clamp(0rem, 8vw, 2.5rem);
+  }
+  .aboutus div:nth-of-type(1) img {
+    height: clamp(7rem, 40vw, 25rem);
+  }
+}
+@media (width <= 795px) {
+  .services div:nth-of-type(1) span:nth-of-type(1) h3 {
+    margin-right: 3rem;
+  }
+  .services div:nth-of-type(1) span:nth-of-type(2) h3 {
+    margin-left: 0.3rem;
+  }
+  .services div:nth-of-type(1) span:nth-of-type(3) h3 {
+    margin-left: 3rem;
+  }
+  .aboutus div:nth-of-type(1) div p {
+    margin-inline: 0;
+  }
+}
+@media (width <= 403px) {
+  .services div:nth-of-type(2) {
+    padding-inline: 0;
+  }
+}

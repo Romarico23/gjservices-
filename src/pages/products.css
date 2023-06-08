@@ -1,0 +1,198 @@
+.productsContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: darkblue;
+  position: relative;
+  background: #fafafa;
+}
+.productsHeader {
+  padding-top: clamp(7rem, 25vw, 9rem);
+  padding-bottom: clamp(1.5rem, 6vw, 3rem);
+  background: rgb(0, 82, 154);
+  background: linear-gradient(
+    144deg,
+    rgba(0, 82, 154, 1) 5%,
+    rgba(0, 0, 247, 1) 100%
+  );
+  width: 100%;
+  color: rgb(245, 245, 245);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productsHeader div:nth-of-type(1) {
+  display: flex;
+}
+.ribbon {
+  margin-right: 0.7rem;
+  width: clamp(1rem, 5.5vw, 1.5rem);
+  height: clamp(5rem, 13vw, 7rem);
+  background: rgb(255, 96, 96);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    50% calc(100% - 10px),
+    0% 100%,
+    0% 0%
+  );
+}
+.productsHeader div:nth-of-type(1) h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+.productsHeader div:nth-of-type(1) p {
+  max-width: clamp(0.85rem, 26vw, 25rem);
+  font-size: clamp(0.85rem, 1.7vw, 1.1rem);
+  text-align: justify;
+}
+.productsHeader img {
+  height: clamp(8rem, 19vw, 14rem);
+  margin-left: -4rem;
+}
+.productsList {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: clamp(1.5rem, 6vw, 2.5rem);
+  padding-bottom: clamp(4rem, 11vw, 6rem);
+}
+.productsList h1,
+.productBrands h1 {
+  filter: drop-shadow(0 5px 0 rgb(157, 157, 157));
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  text-align: center;
+  padding-inline: 1rem;
+}
+.residentialProducts,
+.commercialProducts,
+.industrialProducts {
+  margin-top: 3rem;
+  max-width: 60rem;
+}
+.residentialProducts {
+  width: 100%;
+}
+.residentialProducts h2,
+.commercialProducts h2,
+.industrialProducts h2 {
+  font-size: clamp(1rem, 5vw, 2rem);
+  padding-left: 1rem;
+}
+.residentialProducts h2,
+.industrialProducts h2 {
+  margin-bottom: 1rem;
+}
+.commercialProducts h2 {
+  margin-bottom: clamp(0.85rem, 8vw, 3rem);
+}
+.residentialProductsContainer,
+.commercialProductsContainer,
+.industrialProductsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: clamp(2.3rem, 8vw, 3rem);
+  column-gap: clamp(1rem, 7vw, 8rem);
+}
+.residentialProductsContainer a,
+.commercialProductsContainer a,
+.industrialProductsContainer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+x.residentialProductsContainer a h3,
+.commercialProductsContainer a h3,
+.industrialProductsContainer a h3 {
+  font-size: clamp(0.7rem, 2.5vw, 1.1rem);
+  color: #232323;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  padding-top: clamp(6rem, 25vw, 13rem);
+  transition: 0.4s;
+}
+.residentialProductsContainer a h3 {
+  padding-top: clamp(6rem, 25vw, 16rem);
+}
+.commercialProductsContainer a:nth-of-type(3) h3,
+.commercialProductsContainer a:nth-of-type(4) h3 {
+  padding-top: clamp(10.5rem, 45vw, 28rem);
+}
+.industrialProductsContainer a:nth-of-type(3) h3 {
+  padding-top: clamp(8rem, 30vw, 18rem);
+}
+.residentialProductsContainer a:hover h3,
+.commercialProductsContainer a:hover h3,
+.industrialProductsContainer a:hover h3 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+.residentialProductsContainer a img,
+.commercialProductsContainer a img,
+.industrialProductsContainer a img {
+  width: clamp(7rem, 30vw, 20rem);
+  transition: 0.4s;
+}
+.residentialProductsContainer a:hover img,
+.commercialProductsContainer a:hover img,
+.industrialProductsContainer a:hover img {
+  opacity: 0.5;
+}
+.productBrands {
+  background: #ffffff;
+  margin-top: 0.2rem;
+  color: darkblue;
+  height: 100%;
+  width: 100%;
+  padding-block: clamp(2rem, 7vw, 3.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.productBrands h1 {
+  text-align: center;
+}
+.productBrands div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: clamp(2rem, 8vw, 5rem);
+  row-gap: clamp(1.5rem, 7vw, 2.5rem);
+  padding-inline: 1rem;
+  margin-top: clamp(2rem, 7vw, 3rem);
+  max-width: 60rem;
+}
+.productBrands div a {
+  justify-content: center;
+  align-items: center;
+}
+.productBrands div a img {
+  width: clamp(6rem, 20vw, 16rem);
+  transition: ease 0.4s;
+}
+.productBrands div a:hover img {
+  transform: scale(1.1);
+}
+@media (width <= 770px) {
+  .productsHeader {
+    flex-direction: column;
+  }
+  .productsHeader div:nth-of-type(1) p {
+    max-width: clamp(0.85rem, 60vw, 25rem);
+  }
+  .productsHeader img {
+    margin-top: 1rem;
+    height: clamp(0.85rem, 35vw, 14rem);
+    margin-left: 0;
+  }
+}

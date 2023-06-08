@@ -1,0 +1,150 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(60, 58, 180);
+  background: radial-gradient(
+    circle,
+    rgba(60, 58, 180, 1) 0%,
+    rgba(0, 41, 77, 1) 50%
+  );
+}
+.footerDetails {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-block: clamp(1rem, 8vw, 3rem);
+  margin-inline: 2rem;
+  color: rgb(245, 245, 245);
+}
+.footerDetailsContainer a img {
+  height: clamp(3rem, 16vw, 5rem);
+  transition: ease-out 0.4s;
+}
+.footerDetailsContainer a img:hover {
+  transform: scale(1.1);
+}
+.footerDetailsContainer h3 {
+  font-size: clamp(0.85rem, 5vw, 1.5rem);
+  margin-top: clamp(0.5rem, 4vw, 1rem);
+  margin-bottom: clamp(0.5rem, 5vw, 1.5rem);
+}
+.footerDetailsContainer span {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-block: clamp(0.5rem, 4vw, 1rem);
+}
+.footerDetailsContainer span p,
+.footerDetailsContainer span a {
+  font-size: clamp(0.85rem, 4vw, 1.05rem);
+  margin-left: clamp(0.85rem, 8vw, 2.8rem);
+}
+.footerDetailsContainer span a {
+  color: rgb(86, 134, 255);
+}
+.footerDetailsContainer span svg {
+  position: absolute;
+  font-size: clamp(0.85rem, 6.5vw, 2rem);
+}
+.footerDetails form {
+  margin-top: 6.25rem;
+  margin-left: clamp(0rem, 4.3vw, 4rem);
+}
+.footerDetails form h3 {
+  font-size: clamp(0.85rem, 5vw, 1.5rem);
+  margin-bottom: clamp(0.5rem, 6vw, 1.7rem);
+}
+
+.footerDetails form input[type="email"] {
+  height: clamp(2rem, 9vw, 2.5rem);
+  width: clamp(5rem, 65vw, 14rem);
+  padding-left: clamp(0rem, 3vw, 0.7rem);
+  border: 2px solid rgb(18, 205, 247);
+  background: transparent;
+  color: rgb(245, 245, 245);
+  outline: none;
+  font-size: clamp(0.75rem, 3vw, 0.92rem);
+  font-weight: 700;
+  transition: 0.4s;
+}
+.footerDetails form input[type="email"]::placeholder {
+  color: rgb(245, 245, 245);
+}
+.footerDetails form input[type="email"]:focus,
+.footerDetails form input[type="email"]:hover {
+  background: rgb(245, 245, 245);
+  border: 2px solid rgb(255, 96, 96);
+  color: #232323;
+}
+.footerDetails form input:hover::placeholder {
+  color: #232323;
+}
+.footerDetails form input[type="submit"] {
+  background: rgb(0, 177, 216);
+  border: none;
+  margin-left: 0.8rem;
+  height: clamp(2rem, 9vw, 2.5rem);
+  width: clamp(2rem, 20vw, 5rem);
+  font-weight: 700;
+  color: rgb(245, 245, 245);
+  transition: 0.4s;
+  font-size: clamp(0.75rem, 4vw, 0.92rem);
+  cursor: pointer;
+}
+.footerDetails form input[type="submit"]:hover {
+  background: rgb(255, 96, 96);
+}
+.footerDetails form div {
+  margin-top: 4rem;
+}
+.footerDetails form div:nth-of-type(1) a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 1rem;
+  padding: clamp(0.3rem, 2vw, 0.5rem);
+  color: rgb(245, 245, 245);
+  transition: 0.4s;
+}
+.footerDetails form div:nth-of-type(1) a svg {
+  font-size: clamp(0.85rem, 8vw, 2rem);
+}
+.footerDetails form div:nth-of-type(1) a:hover {
+  background: rgb(0, 177, 216);
+  color: #232323;
+}
+.footerCopyright {
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+}
+.footerCopyright p {
+  font-size: clamp(0.8rem, 5vw, 0.9rem);
+  text-align: center;
+  padding-block: 0.8rem;
+  padding-inline: 0.5rem;
+}
+@media (width <= 1078px) {
+  .footerDetails {
+    flex-direction: column;
+  }
+  .footerDetails form {
+    margin-top: clamp(0.8rem, 6vw, 2rem);
+    margin-left: 0rem;
+  }
+  .footerDetails form div {
+    margin-top: 2rem;
+  }
+}
+@media (width <= 395px) {
+  .footerDetails form {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerDetails form input[type="submit"] {
+    margin-top: 0.5rem;
+    margin-left: 0rem;
+  }
+}

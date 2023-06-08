@@ -1,0 +1,217 @@
+.contactContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: darkblue;
+  margin-top: 5.5rem;
+}
+.contactContentHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 82, 154);
+  background: linear-gradient(
+    144deg,
+    rgba(0, 82, 154, 1) 5%,
+    rgba(0, 0, 247, 1) 100%
+  );
+  padding-block: clamp(2rem, 12vw, 4.5rem);
+  width: 100%;
+}
+.contactContentHeader h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: clamp(1.2rem, 7vw, 4rem);
+  color: rgb(245, 245, 245);
+  padding-inline: 1rem;
+}
+.contactContentHeader h1 svg {
+  margin-right: clamp(0rem, 3vw, 1rem);
+  font-size: clamp(2rem, 10vw, 8rem);
+}
+.contactContentHeader h1 p {
+  text-shadow: 0px 0px 6px rgb(228, 228, 228);
+}
+.contactContentDetails {
+  background-color: #e9e8ff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: clamp(0.5rem, 10vw, 3rem);
+  column-gap: 10%;
+  padding-block: clamp(0.5rem, 10vw, 4rem);
+  padding-inline: 1rem;
+}
+.contactus {
+  margin-top: 3rem;
+}
+.contactus h2 {
+  text-align: center;
+  font-size: clamp(1rem, 5vw, 1.8rem);
+}
+.contactus address {
+  font-style: normal;
+  color: #232323;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  width: 15rem;
+}
+.contactus address p {
+  margin-top: clamp(0.5rem, 2vw, 1rem);
+}
+.bookService {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fafafa;
+  padding-block: clamp(0rem, 9vw, 3rem);
+  padding-inline: clamp(0rem, 7vw, 3rem);
+}
+.bookService h2:nth-of-type(1) {
+  text-align: center;
+  font-size: clamp(1rem, 5vw, 1.8rem);
+}
+.bookService p:nth-of-type(1) {
+  text-align: center;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  margin-top: clamp(0rem, 4vw, 2rem);
+}
+.bookService form {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inputsContainer,
+.bookServiceBtnContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.inputsContainer input,
+.inputsContainer textarea {
+  padding-left: 5px;
+}
+.inputsContainer input::placeholder,
+.inputsContainer textarea::placeholder {
+  color: #6c6c6c;
+}
+.inputsContainer input,
+.inputsContainer select {
+  background: transparent;
+  width: 49%;
+  height: clamp(1.5rem, 8vw, 2.5rem);
+  font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+  border: none;
+  outline: none;
+  border-bottom: 4px solid darkblue;
+  transition: 0.1s ease-in-out;
+}
+.input-2 input::-webkit-outer-spin-button,
+.input-2 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-2 input[type="number"] {
+  -moz-appearance: textfield;
+  outline: none;
+}
+.input-4 textarea {
+  background: transparent;
+  width: 100%;
+  font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+  padding-top: 4px;
+  border-bottom: 4px solid darkblue;
+  border: none;
+  border-bottom: 4px solid darkblue;
+  outline: none;
+  resize: none;
+  transition: 0.1s ease-in-out;
+}
+.inputsContainer input:hover,
+.inputsContainer select:hover,
+.input-4 textarea:hover {
+  border-bottom: 2px solid rgb(73, 73, 255);
+}
+.inputsContainer input:focus,
+.inputsContainer select:focus,
+.input-4 textarea:focus {
+  border-bottom: 2px solid rgb(73, 73, 255);
+}
+.input-3 select option {
+  font-style: italic;
+}
+.input-3 select,
+.input-3 select option {
+  color: #000000;
+}
+.input-3 select:invalid,
+.input-3 select option[value=""] {
+  color: #6c6c6c;
+}
+/*Added for browser compatibility*/
+[hidden] {
+  display: none;
+}
+.input-4 textarea {
+  height: clamp(5rem, 20vw, 8rem);
+}
+.bookServiceBtnContainer {
+  justify-content: end;
+}
+.bookServiceBtn {
+  height: clamp(2rem, 8vw, 3rem);
+  width: clamp(5rem, 25vw, 10rem);
+  font-size: clamp(0.75rem, 3vw, 1.1rem);
+  font-weight: 500;
+  background: black;
+  color: rgb(245, 245, 245);
+  margin-top: clamp(0rem, 4.5vw, 2rem);
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.bookServiceBtn:hover {
+  background: rgb(0, 204, 255);
+  color: black;
+  border: 3px solid black;
+  font-weight: 800;
+  font-size: clamp(0.85em, 4vw, 1.3rem);
+}
+.contactContent iframe {
+  width: 100%;
+  height: 20rem;
+  border: none;
+  margin-bottom: 3px;
+}
+@media (width <= 1083px) {
+  .contactus {
+    margin-top: 0;
+  }
+  .contactus address {
+    width: 100%;
+    padding-inline: clamp(0.5rem, 4vw, 2rem);
+  }
+}
+@media (width <= 470px) {
+  .inputsContainer input,
+  .inputsContainer select {
+    width: 100%;
+  }
+  .inputsContainer,
+  .bookServiceBtnContainer {
+    margin-top: 0rem;
+  }
+  .inputsContainer input,
+  .inputsContainer select,
+  .inputsContainer textarea {
+    margin-top: 0.5rem;
+  }
+}
