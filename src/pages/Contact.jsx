@@ -117,14 +117,13 @@ export const Contact = () => {
       className="contactContent"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.4, ease: "easeInOut" }}
+      transition={{ duration: 0.1, ease: "easeInOut" }}
       exit={{ opacity: 0 }}
     >
       <div className="contactContentHeader">
         <motion.h1
-          initial={{ x: -1000 }}
+          initial={{ x: -100 }}
           animate={{ x: 0 }}
-          exit={{ x: 0 }}
           transition={{ duration: 1 }}
         >
           <MdOutlinePermPhoneMsg />

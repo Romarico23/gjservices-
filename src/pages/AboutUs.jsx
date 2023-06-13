@@ -108,7 +108,7 @@ export const AboutUs = () => {
       className="aboutusContent"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.4, ease: "easeInOut" }}
+      transition={{ duration: 0.1, ease: "easeInOut" }}
       exit={{ opacity: 0 }}
     >
       <div
@@ -119,7 +119,7 @@ export const AboutUs = () => {
             ? "none"
             : "translate(-200px, 0px)",
           opacity: isInViewImgAboutBackground ? 1 : 0,
-          transition: "all 1s",
+          transition: "all .5s",
           zIndex: 50,
         }}
       >

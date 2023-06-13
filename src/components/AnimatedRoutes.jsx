@@ -4,7 +4,7 @@ import { Contact } from "../pages/Contact";
 import { AboutUs } from "../pages/AboutUs";
 import { Products } from "../pages/Products";
 import { Services } from "../pages/Services";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 function AnimatedRoutes() {
@@ -18,6 +18,7 @@ function AnimatedRoutes() {
         <Route path="/services" element={<Services />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AnimatePresence>
   );

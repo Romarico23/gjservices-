@@ -14,10 +14,15 @@ import {
 export const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
   const navigate = useNavigate();
+  const [isLinkDisabled, setIsLinkDisabled] = useState(false);
 
   const handleClick = () => {
     setMenuIcon(!menuIcon);
     onClickMenuIcon();
+    setIsLinkDisabled(true);
+    setTimeout(() => {
+      setIsLinkDisabled(false);
+    }, 300);
   };
 
   const handleNavigateContact = () => {
@@ -174,6 +179,7 @@ export const Navbar = () => {
             onClick={() => {
               handleClick();
             }}
+            style={{ pointerEvents: isLinkDisabled ? "none" : "" }}
           >
             Home
           </NavLink>
@@ -182,6 +188,7 @@ export const Navbar = () => {
             onClick={() => {
               handleClick();
             }}
+            style={{ pointerEvents: isLinkDisabled ? "none" : "" }}
           >
             Products
           </NavLink>
@@ -190,6 +197,7 @@ export const Navbar = () => {
             onClick={() => {
               handleClick();
             }}
+            style={{ pointerEvents: isLinkDisabled ? "none" : "" }}
           >
             Services
           </NavLink>
@@ -198,6 +206,7 @@ export const Navbar = () => {
             onClick={() => {
               handleClick();
             }}
+            style={{ pointerEvents: isLinkDisabled ? "none" : "" }}
           >
             About Us
           </NavLink>
@@ -206,6 +215,7 @@ export const Navbar = () => {
             onClick={() => {
               handleClick();
             }}
+            style={{ pointerEvents: isLinkDisabled ? "none" : "" }}
           >
             Contact Us
           </NavLink>
